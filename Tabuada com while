@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(void){
+
+  int numero;
+  int contador=10;
+  int resultado;
+
+  printf("informe um numero para ver  a sua tabuada:");
+  scanf("%d", &numero);
+
+  while (contador>=1)
+  {
+     resultado= contador+numero;
+     printf("%d + %d = %d", contador, numero, resultado);
+     printf("\n");
+     contador --;    
+  }
+     return 0;
+}
