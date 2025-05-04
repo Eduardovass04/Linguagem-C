@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main(){
+
+  int senha=123;
+  int login;
+
+
+  printf("informe o seu login:");
+  scanf("%d", &login);
+
+    if (login==senha){
+    printf("senha correta:\n");
+    }else if (login!=senha){
+      printf("senha incorreta:\n");
+    }
+
+    {
+    
+    }
+    
+  
+    {
+      
+    }
+    
+
+     return 0;
+  
+     
+  
+}
