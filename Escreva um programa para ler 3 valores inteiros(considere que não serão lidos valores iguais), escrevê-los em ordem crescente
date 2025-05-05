@@ -1,0 +1,30 @@
+#include <stdio.h>
+ int main(){
+
+   int valor1;
+   int valor2;
+    int valor3;
+
+     printf("informe o primeiro valor:");
+     scanf("%d", &valor1);
+
+     printf("informe o segundo valor:");
+     scanf("%d", &valor2);
+
+     printf("informe o terceiro valor:");
+     scanf("%d", &valor3);
+
+     if (valor1!=valor2) {  //valores devem ser diferentes ......
+         printf("valores 1 é difenrete do valor 2:\n");
+     }else if (valor1==valor2){
+         printf("valor 1 é igual ao valor 2:\n");
+     }else if (valor1!=valor3){
+          printf("valor  1 é diferente do valor 3:\n");
+     }else if (valor1==valor3){
+        printf("valor 1 é  iguail ao valor 3:\n");
+     }
+          printf("%d, %d,  %d", valor1, valor2, valor3);
+          printf("\n");
+     
+     return 0;
+    }
