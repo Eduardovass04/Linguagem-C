@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+ int main(){
+    int pmaca;
+    float  total;
+
+      printf("informe quantas macas comprar:\n");
+      scanf("%d", &pmaca);
+      
+        
+     if (pmaca<12){
+      total=pmaca * 0.30;
+          printf("Este e o valor de sua compra:\n");
+     }else if (pmaca>=12){
+         total= pmaca * 0.25;
+           printf("Sua compra");
+     }
+     {
+     }
+           printf("%f", total);
+           printf("\n");
+     {
+    
+     }
+          return 0;
+
+ }
