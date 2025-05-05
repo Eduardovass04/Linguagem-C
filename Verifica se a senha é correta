@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+ int main(){
+
+  int senha=1234;
+  int senhadigitada;
+
+   printf("informe a senha digitada:\n");
+   scanf("%d", &senhadigitada);
+
+
+   if (senha==senhadigitada){
+    printf("ACESSO PERMITIDO:\n");
+   }else
+   printf("ACESSO NEGADO:\n");
+   {
+  
+   }
+    return 0;  
+}
