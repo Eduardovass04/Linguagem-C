@@ -1,0 +1,26 @@
+#include <stdio.h> 
+
+int main() {
+
+  int maior, menor;
+  int n1,n2;
+
+  printf("informe o primeiro numero:\n");
+  scanf("%d", &n1);
+ //Professora Alcilene 
+//algoritmos I
+  printf("informe o segundo numero:\n");
+  scanf("%d", &n2);
+
+  if(n1>n2){
+    maior=n1;
+    menor=n2;
+  }          
+  if(n2>n1){
+    maior=n2;
+    menor=n1;
+  }
+  printf("ordem decrescente: %d, %d\n", menor, maior);
+
+  return 0;
+}
