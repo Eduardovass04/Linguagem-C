@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+
+    float saldo;
+    float nsaldo;
+    float ajuste;
+    printf("informe o saldo:\n");
+    scanf("%f", &saldo);
+
+    nsaldo = (saldo * 10) / 100;
+    ajuste = saldo + nsaldo;
+    printf("Saldo anterior:%2.f\n", saldo);
+    printf("10 por cento de ajuste: %2.f\n", nsaldo);
+    printf("Ajuste: %2.f\n", ajuste);
+
+    return 0;
+}
