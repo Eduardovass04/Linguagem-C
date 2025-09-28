@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+ int main(){
+
+    float salario;
+    float atual, desconto;
+
+    for(int i=1; i<=20; i++){
+
+
+       printf("Informe o  seu salario:\n");
+       scanf("%f", &salario);
+
+
+
+
+       if(salario>2000){
+        atual= salario * 30/100;
+        desconto= salario - atual;
+        printf("Desconto de 30 por cento: %2.f", desconto);
+       }
+          if(salario>=200 && salario <1200){
+            atual=salario * 25/100;
+            desconto=salario-atual;
+            printf("Desconto de 25 por cento: %2.f\n", desconto);
+          }
+
+          if(salario>600 && salario <=1200){
+            atual= salario * 20/100;
+            desconto= salario-atual;
+            printf("Desconto de 20 por cento: %2.f\n", desconto);
+          }
+          if(salario <=600){
+             printf("ISENTO:\n");
+          }
+  
+     
+    }
+    return 0;
+ }
