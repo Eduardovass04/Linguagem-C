@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main(){
+
+    char nome;
+    float n1,n2,n3;
+    float media=0;
+
+   
+                                   
+    for(int i=1; i<=20; i++){
+
+
+    printf("Informe o seu nome:\n");
+    scanf(" %s",&nome);      
+
+    printf("Informe as sua primeira n:\n");
+    scanf("%f", &n1);
+    printf("Informe as sua segunda n:\n");
+    scanf("%f", &n2);
+    printf("Informe as sua primeira n:\n");
+    scanf("%f", &n3);
+    
+  media= (n1+n2+n3)/3;
+  
+  if(media>=7){
+    printf("parabens, %c, aprovado: %2.f\n", nome, media);
+    printf("\n");
+  }
+  if(media>=4 && media<7){
+    printf("Voce, %c, está de final:%2.f\n", nome, media);
+    printf("\n");
+  }
+  if(media<4){
+    printf("Que pena, %c, reprovado:%2.f\n", nome, media);
+    printf("\n");
+  }
+    
+    }
+
+return 0;
+}
