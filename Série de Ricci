@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+      int atual, at1, at2;
+      int s;
+
+      printf("informe o primeiro e o segundo termo:\n");
+      scanf("%d %d", &at1, &at2);
+
+      s=at1+at2;
+
+
+      int i=s;
+      while(i<=20){
+
+        atual=at1+at2;
+        printf("%d", atual);
+        at2=at1;
+        at1=atual;
+  printf("\n");
+        i++;
+      }
+return 0;
+}
