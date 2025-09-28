@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+
+  
+ int n1,n2;
+ int menor,maior;
+
+ printf("informe o primeiro numero:\n");
+ scanf("%d", &n1);
+
+ printf("Informe o segundo numero:\n");
+ scanf("%d", &n2);
+
+
+ if(n1>n2){
+  maior=n1;
+  menor=n2;
+ }else if(n2>n1){
+  maior=n2;
+  menor=n1;
+ }
+ for(int i=menor; i<=maior; i++){
+  printf("%d\n", i);
+ }
+
+  return 0;
+}
