@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+ int main(){
+  float notas;
+  float media=0, media1=0, media2=0, s1=0,s2=0,s3=0;
+  int m=0, m1=0, m2=0;
+  float mg, st;
+  float p1=0;
+
+
+  for(int i=1; i<=20;i++){
+    for(int j=1; j<=10;j++){
+      printf("Informe a sua nota:\n");
+      scanf("%f", &notas);
+
+      if(notas>=7){
+        s1=s1+notas; m++;
+      }
+      if(notas >=4 && notas <7){
+        s2=s2+notas; m1++;
+      }
+      if(notas<4){
+        s3=s3+notas; m2++;
+      }
+    }
+  }
+  media=s1/m;
+  media1=s2/m1;
+  media2=s3/m2;
+  st=(m+m1+m2);
+  mg=(s1+s2+s3)/st;
+  p1=(s1*m)/100;
+
+  printf("media 1: %2.f\n", media);
+  printf("media 2: %2.f\n", media1);
+  printf("Media 3:%2.f\n", media2);
+
+  printf("\n");
+  printf("Media geral: %2.f\n", mg);
+  printf("Percentual de notas maiores que 7 :%2.f\n", p1);
+
+  return 0;
+ }
