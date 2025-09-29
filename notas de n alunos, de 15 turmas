@@ -1,0 +1,33 @@
+#include <stdio.h>
+ int main(){
+
+  int t=0,t1=0;
+  float mg, nota;
+   int ta;
+   float s=0, s1=0;
+   int st;
+  for(int i=1; i<=15;i++){
+
+    printf("informe quantos alunos tem:\n");
+    scanf("%d", &ta);
+    for(int j=1; j<=ta;j++){
+
+      printf("Informe a sua nota:\n");
+      scanf("%f", &nota);
+
+      if(nota>=7){
+   s=s+nota; t++;
+      }
+      if(nota<7){
+        s1=s1+nota; t1++;
+      }
+
+    }
+  }
+  st=t+t1;   mg=(s+s1)/st;
+  printf("Total de alunos com nota maior que 7:%d\n", t );
+  printf("Media geral:%2.f\n", mg);
+
+  return 0;
+
+ }
