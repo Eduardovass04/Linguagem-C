@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+   int vetor[8];
+
+   int s1 = 0, st = 0, smg = 0;
+   int p = 0;
+
+   for (int i = 0; i < 8; i++)
+   {
+
+      printf("Informe os elementos do vetor:\n");
+      scanf("%d", &vetor[i]);
+   }
+
+   for (int i = 0; i < 8; i++)
+   {
+      st = st + vetor[i];
+      printf("%d=%d\n", i + 1, vetor[i]);
+      if (vetor[i] > 30)
+      {
+         s1 = s1 + vetor[i];
+         p++;
+      }
+   }
+   smg = st + s1;
+   printf("Total de numeros maiores que 30:%d\n", p);
+   printf("Soma dos maiores que 30: %d\n", s1);
+   printf("Soma geral:%d\n", smg);
+
+   return 0;
+}
